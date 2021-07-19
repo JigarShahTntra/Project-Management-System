@@ -1,0 +1,9 @@
+  [1m[35m (190.8ms)[0m  [1m[35mCREATE DATABASE "pms_development" ENCODING = 'unicode'[0m
+  [1m[35m (54.6ms)[0m  [1m[35mCREATE DATABASE "pms_test" ENCODING = 'unicode'[0m
+Started GET "/" for 127.0.0.1 at 2021-07-19 11:58:10 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/er/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/er/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 12.1ms | Allocations: 518)
+Completed 200 OK in 36ms (Views: 19.0ms | ActiveRecord: 0.0ms | Allocations: 4180)
+
+
