@@ -2,13 +2,8 @@
 
 # user module
 module Admin
+  # user-controller
   class UsersController < ApplicationController
-    def index
-    end
-    # def check_email
-    #   @user = User.find_by_email(params[:user][:email])
-    #   respond_to do |format|
-    #    format.json { render :json => !@user }
-    #   end
+    def index; end
   end
 end
