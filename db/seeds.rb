@@ -5,7 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+# frozen_string_literal: true
 
-Role.find_or_create_by(role: "admin")
-Role.find_or_create_by(role: "project_manager")
-Role.find_or_create_by(role: "resource_allocator")
+Role.find_or_create_by(role: 'admin')
+Role.find_or_create_by(role: 'project_manager')
+Role.find_or_create_by(role: 'resource_allocator')
