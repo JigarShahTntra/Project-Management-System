@@ -2,7 +2,7 @@
 
 # Admin-module
 module Admin
-  # user-controller
+  # User-Controller
   class UsersController < ApplicationController
     def index; end
   end

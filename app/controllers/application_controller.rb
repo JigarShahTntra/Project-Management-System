@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# application-controller
+# Application-Controller
 class ApplicationController < ActionController::Base
   before_action :authenticate_user!
 end

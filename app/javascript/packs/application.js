@@ -14,5 +14,3 @@ require("jquery");
 import "bootstrap";
 import "../stylesheets/application";
 //require("packs/jquery-validate");
-
-
