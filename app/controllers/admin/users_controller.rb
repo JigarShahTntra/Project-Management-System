@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# user module
+# Admin-module
 module Admin
   # user-controller
   class UsersController < ApplicationController
