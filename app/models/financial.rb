@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# financial-model
+# Financial-model
 class Financial < ApplicationRecord
   belongs_to :profile
 end

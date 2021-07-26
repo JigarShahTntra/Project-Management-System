@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# project-model
+# Project-model
 class Project < ApplicationRecord
   has_one_attached :file
   has_many :project_users
