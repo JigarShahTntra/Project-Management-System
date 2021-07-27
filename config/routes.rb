@@ -1,3 +1,11 @@
+# frozen_string_literal: true
+
+# Routes
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  devise_for :users
+  namespace :admin do
+    get 'users/index'
+    get 'users/check_email', to: 'users#check_email'
+  end
+  root 'admin/users#index'
 end
