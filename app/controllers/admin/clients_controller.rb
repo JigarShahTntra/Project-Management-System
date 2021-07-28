@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+#Client model
 module Admin
   class ClientsController < ApplicationController
     def index
@@ -40,7 +42,7 @@ module Admin
 
     def import
       Client.import(params[:file])
-      redirect_to clients_path, notice: "Added Successfully"
+      redirect_to clients_path, notice: 'Added Successfully'
     end
 
     private
