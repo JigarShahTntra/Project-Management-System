@@ -1,5 +1,7 @@
 # frozen_string_literal: true
+
 #Client model
+
 module Admin
   class ClientsController < ApplicationController
     def index
