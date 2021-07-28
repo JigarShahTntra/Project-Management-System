@@ -1,18 +1,18 @@
 <h1>Welcome</h1>
 <br />
 <%#= search_form_for @q do |f| %>
-  <%#= f.label :name_cont %>
-  <%#= f.search_field :name_cont %><br />
-  <%#= f.submit%>
+<%#= f.label :name_cont %>
+<%#= f.search_field :name_cont %><br />
+<%#= f.submit%>
 <%# end %>
 <br />
 <table border="2">
   <thead>
-  <th>Client Name</th>
-  <th>Email</th>
-  <th>Edit</th>
-  <th>Show</th>
-  <th>Destroy</th>
+    <th>Client Name</th>
+    <th>Email</th>
+    <th>Edit</th>
+    <th>Show</th>
+    <th>Destroy</th>
   </thead>
   <% @clients.each do |user| %>
   <tr>
@@ -24,11 +24,8 @@
   <% end %>
 </table>
 <%= paginate @clients %>
-
 <%= form_tag import_admin_clients_path, multipart: true do %>
-  <%= file_field_tag :file %>
-  <%= submit_tag "Import" %>
-  <% end %>
-
-
+<%= file_field_tag :file %>
+<%= submit_tag "Import" %>
+<% end %>
 <%= link_to "New User", new_admin_client_path %>

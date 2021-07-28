@@ -3,7 +3,8 @@
 # Client model
 module Admin
   class ClientsController < ApplicationController
-    before_action set_client, only: %i[show edit update]
+    before_action :set_client, only: %i[show edit update]
+
     def index
       @clients = Client.all
       @q = @clients.ransack(params[:q])
@@ -46,6 +47,7 @@ module Admin
     def set_client
       @client = Client.find_by(id: params[:id])
     end
+    
     def client_params
       params.require(:client).permit(:name, :email)
     end
