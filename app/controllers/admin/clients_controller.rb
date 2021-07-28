@@ -30,7 +30,7 @@ module Admin
     def edit; end
 
     def update
-      if @client.update(user_params)
+      if @client.update(client_params)
         redirect_to admin_clients_path
       else
         render :edit
