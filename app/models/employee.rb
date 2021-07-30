@@ -12,6 +12,6 @@ class Employee < ApplicationRecord
   delegate :financial, to: :profile
   # Validations
   validates :name, :phone, :email, presence: true
-  validates :name, format: { with: /\A[a-zA-Z]+\z/}
+  validates :name, format: { with: /\A[a-zA-Z]+\z/ }
   validates :phone, numericality: { only_integer: true }, length: { is: 10 }
 end
