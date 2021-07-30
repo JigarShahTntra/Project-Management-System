@@ -53,8 +53,9 @@ module Admin
     private
 
     def user_params
-      params.require(:employee).permit(:name, :email, :phone, profile_attributes: [:id, :aadhar_number, :experience, :prof_type, :position,
-                                                            { financial_attributes: %i[id bank_name ifsc micr bank_address] }])
+      params.require(:employee).permit(:name, :email, :phone, profile_attributes:
+                          [:id, :aadhar_number, :experience, :prof_type, :position, { financial_attributes:
+                          %i[id bank_name ifsc micr bank_address] }])
     end
   end
 end
