@@ -22,6 +22,7 @@ gem 'webpacker', '~> 5.0'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
+gem 'rubocop-rails', require: false
 # Use Redis adapter to run Action Cable in production
 # Use Active Model has_secure_password
 # Use Active Storage variant
