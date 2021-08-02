@@ -1,0 +1,7 @@
+# Employee-show-form
+Name : <%= @employee.name %> <br />
+Phone : <%= @employee.phone %> <br />
+Experience : <%= @employee.profile.experience %> <br />
+Position : <%= @employee.profile.position %> <br />
+Bank Name : <%= @employee.financial.bank_name %> <br />
+<%= link_to 'Back', admin_employees_path %>

@@ -1,0 +1,25 @@
+#Employee-index-form
+<h1>Welcome</h1>
+<table border="2">
+  <thead>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Edit</th>
+    <th>Show</th>
+  </thead>
+  <% @employees.each do |employee| %>
+  <tr>
+    <td><%= employee.name %></td>
+    <td><%= employee.email %></td>
+    <td><%= link_to 'Edit', edit_admin_employee_path(employee) %>
+    <td><%= link_to 'Show', admin_employee_path(employee) %>
+    <td><%= link_to 'Destroy', admin_employee_path(employee), method: :delete %>
+  </tr>
+  <% end %>
+</table>
+<%= link_to "New Employee", new_admin_employee_path	 %>
+<%= paginate @employees %>
+<%= form_tag import_admin_employees_path, multipart: true do %>
+<%= file_field_tag :file %>
+<%= submit_tag "Import" %>
+<% end %>

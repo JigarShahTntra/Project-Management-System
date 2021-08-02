@@ -1,0 +1,55 @@
+# Employee-form
+<%= form_with(model: employee, url: url, method: method, id: "my_form") do |form| %>
+<div>
+  <%= form.label :name %><br>
+  <%= form.text_field :name %>
+</div>
+<div>
+  <%= form.label :phone %><br>
+  <%= form.text_field :phone %>
+</div>
+<div>
+  <%= form.label :email %><br>
+  <%= form.text_field :email %>
+</div>
+
+<%= form.fields_for :profile do |form_profile| %>
+<div>
+  <%= form_profile.label :aadhar_number %><br>
+  <%= form_profile.text_field :aadhar_number %>
+</div>
+<div>
+  <%= form_profile.label :experience %><br>
+  <%= form_profile.text_field :experience %>
+</div>
+<div>
+  <%= form_profile.label :position%><br>
+  <%= form_profile.text_field :position %>
+</div>
+
+<%= form_profile.fields_for :financial, id:"my_form" do |form_financial| %>
+<div>
+  <%= form_financial.label :bank_name %><br>
+  <%= form_financial.text_field :bank_name %>
+</div>
+<div>
+  <%= form_financial.label :ifsc %><br>
+  <%= form_financial.text_field :ifsc %>
+</div>
+<div>
+  <%= form_financial.label :micr %><br>
+  <%= form_financial.text_field :micr %>
+</div>
+<div>
+  <%= form_financial.label :bank_address %><br>
+  <%= form_financial.text_field :bank_address %>
+</div>
+<% end %>
+<% end %>
+<%= form.submit %></div>
+<% end %>
+<script type='text/javascript'>
+  $( document ).ready(function() {
+  FormValidation.validateForm();
+});
+</script>

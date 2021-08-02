@@ -10,3 +10,8 @@
 Role.find_or_create_by(role: 'admin')
 Role.find_or_create_by(role: 'project_manager')
 Role.find_or_create_by(role: 'resource_allocator')
+
+user1 = User.create(email: 'admin@gmail.com', password: '123456')
+user1.add_role(:admin)
+user2 = User.create(email: 'projectmanager@gmail.com', password: '123456')
+user2.add_role(:project_manager)
