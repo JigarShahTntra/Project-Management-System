@@ -1,3 +1,4 @@
+
 # frozen_string_literal: true
 
 # Routes
@@ -13,5 +14,5 @@ Rails.application.routes.draw do
     get 'users/index'
     get 'users/check_email', to: 'users#check_email'
   end
-  root 'admin/employees#index'
+  root 'admin/users#index'
 end
